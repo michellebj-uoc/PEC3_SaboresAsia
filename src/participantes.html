@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Sabores de Asia · Participantes</title>
+  </head>
+
+  <body class="bg-white font-[var(--font-sans)] text-black">
+    
+    <header class="border-b border-black/5">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <a href="index.html" class="text-primary text-2xl font-semibold tracking-tight">
+          Sabores de Asia
+        </a>
+
+        <div class="flex items-center gap-8 text-m font-medium text-black/60">
+          <a class="hover:text-black" href="participantes.html">Ponentes</a>
+          <a class="hover:text-black" href="jornadas.html">Jornadas</a>
+          <a class="hover:text-black" href="#">Actividades</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <section class="mx-auto max-w-6xl px-6 pt-16 pb-16 text-center">
+        <h1 class="font-[var(--font-display)] text-primary text-4xl font-bold tracking-tight sm:text-5xl">
+          Ponentes Invitados
+        </h1>
+      </section>
+
+      <section class="mx-auto max-w-5xl px-6 pb-20">
+        <div class="grid gap-y-14 gap-x-8 justify-items-center sm:grid-cols-2 lg:grid-cols-3">
+
+          <include
+            src="./views/components/speaker-card.html"
+            locals='{
+              "image": "./assets/images/chef1.jpg",
+              "name": "Hiro Tanaka",
+              "description": "Chef especializado en ramen y tonkatsu japones."
+            }'
+          ></include>
+          
+          <include
+            src="./views/components/speaker-card.html"
+            locals='{
+              "image": "./assets/images/chef2.jpg",
+              "name": "Hana Tomori",
+              "description": "Especialista en dumplings tradicionales y sopas asiáticas."
+            }'
+          ></include>
+          
+          <include
+            src="./views/components/speaker-card.html"
+            locals='{
+              "image": "./assets/images/chef3.jpg",
+              "name": "Kaede Miyaki",
+              "description": "Maestro de sushi y experto en técnicas de corte japonesas."
+            }'
+          ></include>
+
+          <include
+            src="./views/components/speaker-card.html"
+            locals='{
+              "image": "./assets/images/chef4.jpg",
+              "name": "Mei Lin",
+              "description": "Especialista en comida tradicional chica y filipina."
+            }'
+          ></include>
+
+          <include
+            src="./views/components/speaker-card.html"
+            locals='{
+              "image": "./assets/images/chef5.jpg",
+              "name": "Karem Park",
+              "description": "Conocido por su reinterpretación moderna del kimchi coreano."
+            }'
+          ></include>
+
+          <include
+            src="./views/components/speaker-card.html"
+            locals='{
+              "image": "./assets/images/chef6.jpg",
+              "name": "Jun Patel",
+              "description": "Chef especializado en currys tradicionales del norte."
+            }'
+          ></include>    
+
+        </div>
+      </section>
+
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
