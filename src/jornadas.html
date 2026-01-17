@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+    <title>Sabores de Asia · Sobre las jornadas</title>
+  </head>
+
+  <body class="bg-white font-[var(--font-sans)] text-black">
+    <header class="border-b border-black/5">
+      <nav class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
+        <a href="index.html" class="text-primary text-2xl font-semibold tracking-tight">
+          Sabores de Asia
+        </a>
+
+        <div class="flex items-center gap-8 text-m font-medium text-black/60">
+          <a class="hover:text-black" href="participantes.html">Ponentes</a>
+          <a class="hover:text-black" href="jornadas.html">Jornadas</a>
+          <a class="hover:text-black" href="#">Actividades</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <include
+        src="./views/components/hero-banner.html"
+        locals='{
+          "image": "./assets/images/hero.jpg",
+          "title": "Sobre las Jornadas"
+        }'
+      ></include>
+
+      <section class="mx-auto max-w-5xl px-6 py-12">
+        <div class="grid gap-10 lg:grid-cols-3">
+
+          <div class="lg:col-span-1">
+            <p class="text-lg leading-relaxed text-black/80">
+              Durante tres días exploraremos las tradiciones culinarias de Asia a través de recetas, técnicas y demostraciones prácticas. 
+            </p>
+          </div>
+
+          <div class="lg:col-span-2">
+            <p class="mt-4 pb-6 text-base leading-relaxed text-black/70">
+              Las jornadas Sabores de Asia nacen con el propósito de acercar al público occidental una visión auténtica y respetuosa de las cocinas tradicionales asiáticas. Cada sesión será impartida por chefs expertos que compartirán conocimientos transmitidos de generación en generación. 
+            </p>
+            <div class="inline-flex items-center rounded-full bg-secondary px-3 py-1 text-xs font-semibold text-white">
+              Edición 2026
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-5xl px-6">
+        <hr class="border-black/10">
+      </div>
+
+      <section class="mx-auto max-w-5xl px-6 py-8">
+
+        <div class="mt-6 space-y-8">
+          <include
+            src="./views/components/session-item.html"
+            locals='{
+              "number": "1",
+              "heading": "Taller de Sushi Tradicional",
+              "text": "Un recorrido desde la selección del arroz hasta la elaboración de makis y nigiris."
+            }'
+          ></include>
+
+          <include
+            src="./views/components/session-item.html"
+            locals='{
+              "number": "2",
+              "heading": "Fermentación Coreana",
+              "text": "Aprenderemos los fundamentos del kimchi y otras técnicas ancestrales."
+            }'
+          ></include>
+
+          <include
+            src="./views/components/session-item.html"
+            locals='{
+              "number": "3",
+              "heading": "Currys del Norte de India",
+              "text": "Descubre cómo equilibrar especias y sabores intensos con métodos tradicionales."
+            }'
+          ></include>
+        </div>
+      </section>
+
+      <div class="mx-auto max-w-5xl px-6">
+        <hr class="border-black/10">
+      </div>
+
+      <section class="mx-auto max-w-5xl px-6 py-12">
+        <p class="text-2xl leading-relaxed font-bold text-black/80">
+          Una celebración del patrimonio culinario asiático a través de sus técnicas más emblemáticas. 
+        </p>
+
+        <p class="mt-4 text-base leading-relaxed text-black/80">
+          Las jornadas no solo buscan mostrar recetas o técnicas, sino abrir una ventana a la manera en que la comida explica la historia de un pueblo. Detrás de cada preparación hay un relato de migraciones, familias y tradiciones que han resistido el paso del tiempo. En cada taller nos acercaremos a estos relatos, descubriendo cómo conviven la innovación y la fidelidad a lo ancestral en las cocinas asiáticas contemporáneas. Para muchos ponentes, cocinar no es solo un oficio: es una forma de preservar la memoria cultural de sus comunidades. 
+        </p>
+      </section>
+
+      <section class="py-6">
+        <div class="mx-auto max-w-7xl px-0 sm:px-4">
+          <img
+            class="w-full object-cover"
+            src="./assets/images/jornadas.jpg"
+            alt="Imagen de las jornadas"
+            loading="lazy"
+          >
+        </div>
+      </section>
+
+      <section class="mx-auto max-w-5xl px-6 py-6 pb-20">
+        <p class="text-base leading-relaxed text-black/80">
+          A través de demostraciones en directo, conversaciones y degustaciones guiadas, los asistentes podrán experimentar la riqueza de sabores que definen la identidad culinaria de Asia. Desde la delicadeza del sushi hasta la profundidad de los currys o la expresividad de los fermentados coreanos, cada sesión está diseñada para introducir ingredientes, técnicas y modos de entender la comida que pueden transformar nuestra propia manera de cocinar. La intención es que cada participante se lleve no solo conocimientos prácticos, sino una apreciación más profunda de la diversidad gastronómica del continente. 
+        </p>
+
+        <p class="mt-4 text-base leading-relaxed text-black/80">
+          También hemos reservado espacios para reflexionar sobre el impacto cultural y social de la cocina tradicional. ¿Cómo dialogan hoy en día las recetas heredadas con las nuevas generaciones? ¿Cómo se adaptan las técnicas ancestrales a ingredientes locales sin perder su esencia? Los chefs invitados compartirán sus experiencias personales, desde sus aprendizajes familiares hasta los desafíos de transmitir estos conocimientos en un mundo cada vez más globalizado. Este intercambio convierte las jornadas en un puente entre tradición y modernidad. 
+        </p>
+
+        <p class="mt-4 text-base leading-relaxed text-black/80">
+          Finalmente, cada actividad está pensada para ser accesible y participativa, independientemente del nivel de experiencia culinaria. Los participantes podrán hacer preguntas, probar ingredientes poco conocidos y explorar de cerca utensilios y métodos auténticos. El objetivo es que todos encuentren inspiración para seguir experimentando en casa, manteniendo viva la curiosidad por la cocina asiática y entendiendo que detrás de cada plato hay un universo de historias, gestos y saberes compartidos.  
+        </p>
+      </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+  </body>
+</html>
