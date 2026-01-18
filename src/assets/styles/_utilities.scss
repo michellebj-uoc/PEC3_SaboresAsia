@@ -30,3 +30,9 @@
     @apply text-base leading-relaxed text-black/80;
   }
 }
+
+@layer utilities {
+  .font-title {
+    font-family: var(--font-display);
+  }
+}
