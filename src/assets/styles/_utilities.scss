@@ -1,0 +1,28 @@
+@layer components {
+  /* 1) Contenedor */
+  .page-container {
+    @apply mx-auto max-w-5xl px-6;
+  }
+
+  /* 2) Nav */
+  .top-nav {
+    @apply border-b border-black/5;
+  }
+
+  .top-nav__inner {
+    @apply mx-auto flex max-w-7xl items-center justify-between px-6 py-4;
+  }
+
+  .top-nav__links {
+    @apply flex items-center gap-8 text-base font-medium text-black/60;
+  }
+
+  .top-nav__link {
+    @apply hover:text-black;
+  }
+
+  /* 3) Párrafo base */
+  .text-body {
+    @apply text-base leading-relaxed text-black/80;
+  }
+}
