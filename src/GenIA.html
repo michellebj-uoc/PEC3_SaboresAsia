@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contestants — Cooking contest 2024 edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="min-h-screen bg-white text-slate-900">
+    <!-- Top nav -->
+    <header class="w-full">
+      <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-7 sm:px-6 lg:px-10">
+        <a href="#" class="text-lg font-medium tracking-tight">Cooking contest 2024 edition</a>
+
+        <nav class="hidden items-center gap-9 text-sm text-slate-700 sm:flex">
+          <a href="#" class="hover:text-slate-900">Home</a>
+          <a href="#" class="hover:text-slate-900">The contest</a>
+          <a href="#" class="hover:text-slate-900">Recipes</a>
+          <a
+            href="#"
+            class="rounded-md bg-slate-900 px-4 py-2 font-medium text-white shadow-sm hover:bg-slate-800"
+            aria-current="page"
+            >Contestants</a
+          >
+        </nav>
+
+        <!-- Mobile menu (simple) -->
+        <div class="sm:hidden">
+          <details class="relative">
+            <summary
+              class="list-none cursor-pointer rounded-md border border-slate-200 px-3 py-2 text-sm text-slate-700 shadow-sm"
+            >
+              Menu
+            </summary>
+            <div
+              class="absolute right-0 z-10 mt-2 w-44 overflow-hidden rounded-lg border border-slate-200 bg-white shadow-lg"
+            >
+              <a href="#" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Home</a>
+              <a href="#" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">The contest</a>
+              <a href="#" class="block px-4 py-2 text-sm text-slate-700 hover:bg-slate-50">Recipes</a>
+              <a href="#" class="block bg-slate-900 px-4 py-2 text-sm font-medium text-white">Contestants</a>
+            </div>
+          </details>
+        </div>
+      </div>
+    </header>
+
+    <main class="w-full">
+      <!-- Title -->
+      <section class="mx-auto max-w-7xl px-4 pb-10 pt-10 text-center sm:px-6 lg:px-10">
+        <h1 class="text-4xl font-semibold tracking-tight sm:text-5xl">Contestants</h1>
+        <p class="mx-auto mt-5 max-w-2xl text-sm text-slate-400 sm:text-base">
+          This section describes the recipes of the best contestants
+        </p>
+      </section>
+
+      <!-- Hero image -->
+      <section class="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-10">
+        <div class="overflow-hidden rounded-md">
+          <img
+            class="h-60 w-full object-cover sm:h-80 md:h-96 lg:h-[420px]"
+            src="https://images.unsplash.com/photo-1652862730506-9f7310faabbd?auto=format&fit=crop&w=2000&q=80"
+            alt="People sharing food on a table"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      <!-- Recipes cards -->
+      <section class="mx-auto max-w-7xl px-4 pb-20 sm:px-6 lg:px-10">
+        <div class="mb-10">
+          <h2 class="text-2xl font-semibold tracking-tight">The recipes</h2>
+          <p class="mt-2 text-sm text-slate-400">These are the recipes of the best contestants</p>
+        </div>
+
+        <div class="flex flex-col gap-8 md:flex-row">
+          <!-- Card 1 -->
+          <article class="w-full rounded-xl bg-white p-7 shadow-sm shadow-slate-200/70">
+            <h3 class="text-sm font-semibold text-slate-900">Cajun seafood pasta</h3>
+
+            <div class="mt-5 flex items-start gap-4">
+              <img
+                class="h-10 w-10 shrink-0 rounded-full object-cover"
+                src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=200&q=80"
+                alt="Avatar of John Cooper"
+                loading="lazy"
+              />
+              <div class="min-w-0">
+                <p class="text-xs font-semibold text-slate-900">John Cooper</p>
+                <p class="mt-2 text-sm text-slate-500">
+                  This Cajun seafood pasta recipe is a hot one, but delicious!
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="w-full rounded-xl bg-white p-7 shadow-sm shadow-slate-200/70">
+            <h3 class="text-sm font-semibold text-slate-900">Cedar planked salmon</h3>
+
+            <div class="mt-5 flex items-start gap-4">
+              <img
+                class="h-10 w-10 shrink-0 rounded-full object-cover"
+                src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=200&q=80"
+                alt="Avatar of Marta Alonso"
+                loading="lazy"
+              />
+              <div class="min-w-0">
+                <p class="text-xs font-semibold text-slate-900">Marta Alonso</p>
+                <p class="mt-2 text-sm text-slate-500">
+                  Salmon reaches its full potential when it's grilled on top of a cedar plank.
+                </p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="w-full rounded-xl bg-white p-7 shadow-sm shadow-slate-200/70">
+            <h3 class="text-sm font-semibold text-slate-900">Poulet au vinaigre</h3>
+
+            <div class="mt-5 flex items-start gap-4">
+              <img
+                class="h-10 w-10 shrink-0 rounded-full object-cover"
+                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=200&q=80"
+                alt="Avatar of Mary Ann Stones"
+                loading="lazy"
+              />
+              <div class="min-w-0">
+                <p class="text-xs font-semibold text-slate-900">Mary Ann Stones</p>
+                <p class="mt-2 text-sm text-slate-500">Irresistible chicken, cooked with vinegar.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
+        <!-- Thin top line that doesn't span full page -->
+        <div class="h-px w-full bg-transparent py-6">
+          <div class="h-px w-full bg-slate-200"></div>
+        </div>
+
+        <div class="pb-12">
+          <div class="grid grid-cols-1 gap-10 md:grid-cols-12 md:items-end">
+            <!-- Brand + socials -->
+            <div class="md:col-span-4">
+              <p class="text-sm font-medium text-slate-900">Cooking contest 2024 edition</p>
+
+              <!-- Socials aligned with baseline of adjacent columns on desktop -->
+              <div class="mt-8 flex items-center gap-4 text-slate-500 md:mt-14">
+                <a href="#" class="rounded-md p-2 hover:bg-slate-50 hover:text-slate-900" aria-label="Facebook">
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M13.5 22v-8h2.7l.4-3H13.5V9.1c0-.9.3-1.6 1.6-1.6H16.7V4.9c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3V11H7.5v3H10v8h3.5Z"
+                    />
+                  </svg>
+                </a>
+
+                <a href="#" class="rounded-md p-2 hover:bg-slate-50 hover:text-slate-900" aria-label="LinkedIn">
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M6.5 6.7A2.2 2.2 0 1 1 6.5 2.3a2.2 2.2 0 0 1 0 4.4ZM4.7 21.7h3.6V9H4.7v12.7ZM9.9 9h3.4v1.7h.1c.5-1 1.8-2 3.7-2 3.9 0 4.6 2.6 4.6 5.9v7.1h-3.6v-6.3c0-1.5 0-3.4-2.1-3.4-2.1 0-2.4 1.6-2.4 3.3v6.4H9.9V9Z"
+                    />
+                  </svg>
+                </a>
+
+                <a href="#" class="rounded-md p-2 hover:bg-slate-50 hover:text-slate-900" aria-label="YouTube">
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M21.6 7.2a3 3 0 0 0-2.1-2.1C17.7 4.6 12 4.6 12 4.6s-5.7 0-7.5.5A3 3 0 0 0 2.4 7.2 31.4 31.4 0 0 0 2 12a31.4 31.4 0 0 0 .4 4.8 3 3 0 0 0 2.1 2.1c1.8.5 7.5.5 7.5.5s5.7 0 7.5-.5a3 3 0 0 0 2.1-2.1A31.4 31.4 0 0 0 22 12a31.4 31.4 0 0 0-.4-4.8ZM10.2 14.9V9.1L15.4 12l-5.2 2.9Z"
+                    />
+                  </svg>
+                </a>
+
+                <a href="#" class="rounded-md p-2 hover:bg-slate-50 hover:text-slate-900" aria-label="Instagram">
+                  <svg class="h-4 w-4" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path
+                      d="M7.5 2.8h9A4.7 4.7 0 0 1 21.2 7.5v9a4.7 4.7 0 0 1-4.7 4.7h-9A4.7 4.7 0 0 1 2.8 16.5v-9A4.7 4.7 0 0 1 7.5 2.8Zm9 2h-9a2.7 2.7 0 0 0-2.7 2.7v9a2.7 2.7 0 0 0 2.7 2.7h9a2.7 2.7 0 0 0 2.7-2.7v-9a2.7 2.7 0 0 0-2.7-2.7ZM12 7.2a4.8 4.8 0 1 1 0 9.6 4.8 4.8 0 0 1 0-9.6Zm0 2a2.8 2.8 0 1 0 0 5.6 2.8 2.8 0 0 0 0-5.6Zm6-2.3a1.1 1.1 0 1 1 0 2.2 1.1 1.1 0 0 1 0-2.2Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+            </div>
+
+            <!-- Columns -->
+            <div class="md:col-span-8">
+              <div class="grid grid-cols-2 gap-10 sm:grid-cols-3 md:justify-items-end">
+                <div class="md:justify-self-end">
+                  <p class="text-xs font-semibold text-slate-900">Recipes</p>
+                  <ul class="mt-4 space-y-3 text-sm text-slate-500">
+                    <li><a href="#" class="hover:text-slate-900">Cajun seafood pasta</a></li>
+                    <li><a href="#" class="hover:text-slate-900">Cedar planked salmon</a></li>
+                    <li><a href="#" class="hover:text-slate-900">Poulet au vinaigre</a></li>
+                  </ul>
+                </div>
+
+                <div class="md:justify-self-end">
+                  <p class="text-xs font-semibold text-slate-900">Contestants</p>
+                  <ul class="mt-4 space-y-3 text-sm text-slate-500">
+                    <li><a href="#" class="hover:text-slate-900">John Cooper</a></li>
+                    <li><a href="#" class="hover:text-slate-900">Marta Alonso</a></li>
+                    <li><a href="#" class="hover:text-slate-900">Mary Ann Stones</a></li>
+                  </ul>
+                </div>
+
+                <div class="md:justify-self-end">
+                  <p class="text-xs font-semibold text-slate-900">Contest editions</p>
+                  <ul class="mt-4 space-y-3 text-sm text-slate-500">
+                    <li><a href="#" class="hover:text-slate-900">2024</a></li>
+                    <li><a href="#" class="hover:text-slate-900">2023</a></li>
+                    <li><a href="#" class="hover:text-slate-900">2022</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- :contentReference[oaicite:0]{index=0} -->
+  </body>
+</html>
